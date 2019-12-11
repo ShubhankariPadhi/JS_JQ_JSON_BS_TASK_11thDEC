@@ -1,0 +1,75 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body style=" background-color: lightblue;">
+<h1 class="text-center bg-dark text-white" >Employee Details </h1>
+<div class="container">
+
+   <br><br>
+    <button id="GET_TABLE">GET_TABLE</button>
+    <button id="add_row">ADD_ROW</button>
+    <button id="remove_row">REMOVE_ROW</button>
+    <form id="form_show"  class="form-group" >
+
+        <label>Employee Id</label>
+        <input type="text"  id="eid" name="id"  class="form-control"><br>
+
+        <label>Employee name</label>
+        <input type="text"   id="name" name="name"  class="form-control"><br>
+
+        <label>Employee job type</label>
+        <input type="text" id="type"  name="type" class="form-control"><br>
+
+        <label>Employee dob</label>
+        <input type="text" id="dob" name="dob"  class="form-control"><br>
+
+        <label>Employee experience</label>
+        <input type="text" id="experience"  name="exp" class="form-control" ><br>
+
+        <label>Employee date of joining</label>
+        <input type="text" id="dateOfJoining" name="doj" class="form-control" ><br>
+
+        <button  class="btn btn-primary" name="add"  id="add" value="add" type="submit">submit</button>
+        <button  class="btn btn-secondary" name="remove"  id="remove" value="remove" type="button">remove</button>
+
+    </form>
+
+
+
+</div>
+
+<div id="result">result of form</div>
+<div class="container">
+    <div class="table-responsive">
+
+        <br/>
+
+        <table class="table table-bordered table-dark table-striped" id="emp_table" onclick="myFunc()" >
+
+            <tr>
+                <td >Employee Id</td>
+                <td >Employee name</td>
+                <td >Employee job type</td>
+                <td >Employee dob</td>
+                <td >Employee experience</td>
+                <td >Employee date of joining</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+</div>
+
+</body>
+<script type="text/javascript" src="get_data.js"></script>
+</html>
