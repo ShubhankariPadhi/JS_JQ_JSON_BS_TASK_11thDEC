@@ -9,10 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body style=" background-color: lightblue;">
+
 <h1 class="text-center bg-dark text-white" >Employee Details </h1>
 <div class="container">
 
-   <br><br>
+    <br><br>
     <button id="GET_TABLE">GET_TABLE</button>
     <button id="add_row">ADD_ROW</button>
     <button id="remove_row">REMOVE_ROW</button>
@@ -36,16 +37,15 @@
         <label>Employee date of joining</label>
         <input type="text" id="dateOfJoining" name="doj" class="form-control" ><br>
 
-        <button  class="btn btn-primary" name="add"  id="add" value="add" type="submit">submit</button>
+        <button  class="btn btn-primary" name="add"  id="add" value="add" type="button">submit</button>
         <button  class="btn btn-secondary" name="remove"  id="remove" value="remove" type="button">remove</button>
 
     </form>
 
-
-
 </div>
 
-<div id="result">result of form</div>
+
+
 <div class="container">
     <div class="table-responsive">
 
@@ -65,10 +65,19 @@
 
     </div>
 
+</div>
 
 
+<div id="result" class="container" style="width: 100%;height: 40px;border: 2px solid black">
 
 </div>
+
+
+
+
+
+
+
 
 </body>
 <script type="text/javascript" src="get_data.js"></script>
